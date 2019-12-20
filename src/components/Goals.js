@@ -1,5 +1,6 @@
 import React from 'react';
 import Projects from './Projects';
+// import PropTypes from 'prop-types';
 
 class Goals extends React.Component {  
   render(){
@@ -11,5 +12,9 @@ class Goals extends React.Component {
     ))
   } 
 }
+
+// Goals.propTypes = {
+//   goal: PropTypes.object.isRequired
+// }
 
 export default Goals;

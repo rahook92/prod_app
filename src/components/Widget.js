@@ -64,11 +64,21 @@ class Widget extends React.Component {
     }
   render(){
     return (
-      <div>
+      <div style={ widgetStyle }>
           <Goals goals={this.state.goals} />
       </div>
     )
   } 
+}
+
+const widgetStyle = { 
+    width : '60%', 
+    height : '95vh', 
+    margin: '0 auto', 
+    backgroundColor: 'gray', 
+    listStyleType: 'none', 
+    boxShadow: '2px 2px 5px rgb(163, 151, 151)',
+    borderRadius: '5px'
 }
 
 export default Widget;
