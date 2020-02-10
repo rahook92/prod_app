@@ -1,0 +1,2 @@
+1. add unique keys
+2. link bootstrap styles
