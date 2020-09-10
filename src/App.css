@@ -34,27 +34,26 @@ i {
     height: 10%;
 }
 .tasks {
-    display: none;
     width: 100%;
-    background-color: rgb(89, 132, 189) !important;
     border-bottom: 1px solid rgba(163, 162, 162, 0.267);
     color: rgb(238, 122, 141);
-}
-.tasks li {
-    margin-left: 35px;
     font-size: 20px;
     line-height: 30px;
 }
+
 .goals {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 28px;
-    margin-right: 40px;
-    margin-left: 20px;
+    /* margin-right: 40px;
+    margin-left: 20px; */
     color: rgb(207, 75, 97);
 }
-.container div:nth-child(even){
-    background-color: rgb(62, 71, 122); 
-}
+/* .goals :nth-child(even) {
+    background-color: rgb(68, 80, 149); 
+} */
+
 #addGoal {
     height: 100%;
 }
@@ -75,14 +74,14 @@ form {
     text-decoration: line-through;
 }
 .addTask {
-    display: none;
+    display: block;
     width: 100%;
     background-color: rgb(62, 71, 122);
     font-size: 14px;
     color: rgb(255, 255, 255);
 }
 .taskForm {
-    display: none;
+    display: block;
     width: 100%;
     font-size: 18px;
 }
