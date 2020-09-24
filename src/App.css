@@ -1,4 +1,4 @@
-
+/* global app */
 .App {
     background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1447cf52326889.590c8c0515750.png');
     background-size: 100vw 100%;
@@ -6,6 +6,7 @@
     width: 100vw;
     padding-top: 30px;
 }
+/* main-container */
 .container {
     width : 38%; 
     height : 90vh; 
@@ -21,6 +22,7 @@
 i {
     float: right;
 }
+/* goals-container */
 #goals-container {
     height: 90%;
     overflow-y: scroll;
@@ -30,30 +32,20 @@ i {
     overflow-wrap: break-word;
     clear: both;
 }
-#goal-form {
-    height: 10%;
-}
-.tasks {
-    width: 100%;
-    border-bottom: 1px solid rgba(163, 162, 162, 0.267);
-    color: rgb(238, 122, 141);
-    font-size: 20px;
-    line-height: 30px;
-}
-
 .goals {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 28px;
-    /* margin-right: 40px;
-    margin-left: 20px; */
     color: rgb(207, 75, 97);
 }
-/* .goals :nth-child(even) {
-    background-color: rgb(68, 80, 149); 
-} */
-
+.goals:hover {
+    background-color: rgb(48, 50, 150);
+}
+/* goal-form */
+#goal-form {
+    height: 10%;
+}
 #addGoal {
     height: 100%;
 }
@@ -68,25 +60,36 @@ form {
     position: relative;
     bottom: 2px;
 }
+/* tasks */
+.tasks {
+    width: 100%;
+    border-bottom: 1px solid rgba(163, 162, 162, 0.267);
+    color: rgb(238, 122, 141);
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 20px;
+}
 .tasks:hover {
     opacity: 0.75;
-    color: rgb(160, 24, 24);
+    color: white;
     text-decoration: line-through;
 }
-.addTask {
-    display: block;
-    width: 100%;
-    background-color: rgb(62, 71, 122);
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-}
+/* taskForm */
 .taskForm {
     display: block;
     width: 100%;
     font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-.addTask img {
-    padding: 0 5px 0 10px;
+label {
+    font-size: 12px;
+    color: white;
+    margin: 0 10px 0 20px;
+}
+input {
+    border: none;
+    border-radius: 2px;
 }
 .completed {
     text-decoration: line-through;

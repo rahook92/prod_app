@@ -20,7 +20,7 @@ const goalForm = (props) => {
         }
         return (
             <form id='addGoal' onSubmit={ updateGoals }>
-                <input type='text' id='goal' placeholder='Create a new goal'></input>
+                <input type='text' id='goal' placeholder='Create a new goal' autoFocus></input>
             </form>
         )
 }
