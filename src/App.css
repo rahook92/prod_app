@@ -1,14 +1,13 @@
 /* global app */
 .App {
-    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1447cf52326889.590c8c0515750.png');
-    background-size: 100vw 100%;
     height: 100vh;
     width: 100vw;
     padding-top: 30px;
+    background-color: #1a2236;
 }
 /* main-container */
 .container {
-    width : 38%; 
+    width : 40%; 
     height : 90vh; 
     margin: 0 auto; 
     background-color: rgb(48, 57, 107); 
@@ -62,7 +61,7 @@ form {
 }
 /* tasks */
 .tasks {
-    width: 100%;
+    width: 90%;
     border-bottom: 1px solid rgba(163, 162, 162, 0.267);
     color: rgb(238, 122, 141);
     font-size: 20px;
@@ -95,4 +94,19 @@ input {
     text-decoration: line-through;
     color: black;
     pointer-events: none;
+}
+@media (max-width: 1100) {
+    .container {
+        width: 50%;
+    }
+}
+@media (max-width: 900px) {
+    .container {
+        width: 60%;
+    }
+}
+@media (max-width: 700px){
+    .container {
+        width : 85%; 
+    }   
 }
